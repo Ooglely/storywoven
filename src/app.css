@@ -11,7 +11,7 @@
 body {
     margin: 0;
     background: rgb(7, 133, 255);
-    background-image: url("../static/lights.gif");
+    background-image: url("/lights.gif");
     background-attachment: fixed;
     background-size: auto;
     background-repeat: repeat-x;
@@ -20,24 +20,24 @@ body {
 
 body,
 body * {
-    cursor: url("../static/cursor/pointer_0.png"), default;
+    cursor: url("/cursor/pointer_0.png"), default;
 }
 
 a,
 a *,
 button,
 button * {
-    cursor: url("../static/cursor/button_0.png"), pointer;
+    cursor: url("/cursor/button_0.png"), pointer;
     -webkit-animation: click_cursor 1s infinite;
     animation: click_cursor 1s infinite;
 }
 
 @keyframes click_cursor {
     0% {
-        cursor: url("../static/cursor/button_0.png"), pointer;
+        cursor: url("/cursor/button_0.png"), pointer;
     }
     50% {
-        cursor: url("../static/cursor/button_1.png"), pointer;
+        cursor: url("/cursor/button_1.png"), pointer;
     }
 }
 
@@ -47,9 +47,9 @@ button * {
     font-style: normal;
     font-display: swap;
     src:
-        url("../static/Maplestory-Light.woff2") format("woff2"),
-        url("../static/Maplestory-Light.woff") format("woff"),
-        url("../static/Maplestory-Light.otf") format("opentype");
+        url("/Maplestory-Light.woff2") format("woff2"),
+        url("/Maplestory-Light.woff") format("woff"),
+        url("/Maplestory-Light.otf") format("opentype");
 }
 @font-face {
     font-family: "Maplestory";
@@ -57,20 +57,20 @@ button * {
     font-style: normal;
     font-display: swap;
     src:
-        url("../static/Maplestory-Bold.woff2") format("woff2"),
-        url("../static/Maplestory-Bold.woff") format("woff"),
-        url("../static/Maplestory-Bold.otf") format("opentype"),
-        url("../static/Maplestory-Bold.ttf") format("truetype");
+        url("/Maplestory-Bold.woff2") format("woff2"),
+        url("/Maplestory-Bold.woff") format("woff"),
+        url("/Maplestory-Bold.otf") format("opentype"),
+        url("/Maplestory-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../static/JetBrainsMono-Regular.ttf") format("truetype");
+    src: url("/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: staywork;
-    src: url("../static/Staywork.otf") format("opentype");
+    src: url("/Staywork.otf") format("opentype");
 }
 
 .monospace {

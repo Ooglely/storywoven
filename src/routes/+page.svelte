@@ -58,7 +58,7 @@
 <style>
     :global(.clicking),
     :global(.clicking *) {
-        cursor: url("../../static/cursor/pointer_1.png"), pointer;
+        cursor: url("/cursor/pointer_1.png"), pointer;
     }
 
     .view {
@@ -87,7 +87,7 @@
         bottom: 0px;
         height: 19px;
         width: 100%;
-        background-image: url("../../static/ground.png");
+        background-image: url("/ground.png");
     }
 
     .sprites {

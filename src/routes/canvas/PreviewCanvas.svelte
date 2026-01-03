@@ -107,7 +107,7 @@
         bottom: 0px;
         height: 19px;
         width: 100%;
-        background-image: url("../../../static/ground.png");
+        background-image: url("/ground.png");
         border-radius: 0px 0px 7px 7px;
     }
 </style>

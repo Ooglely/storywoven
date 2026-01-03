@@ -19,7 +19,7 @@
     "@eslint/compat": "^1.2.3",
     "@sveltejs/adapter-node": "^5.2.9",
     "@sveltejs/enhanced-img": "^0.4.4",
-    "@sveltejs/kit": "^2.9.0",
+    "@sveltejs/kit": "^2.49.2",
     "@sveltejs/vite-plugin-svelte": "^5.0.0",
     "@types/adm-zip": "^0.5.7",
     "@types/node": "^22.10.7",

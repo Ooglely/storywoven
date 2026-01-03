@@ -172,10 +172,10 @@
     }
 
     .grab {
-        cursor: url("../../../static/cursor/grab_0.png"), grab;
+        cursor: url("/cursor/grab_0.png"), grab;
     }
 
     .grab:active {
-        cursor: url("../../../static/cursor/grab_1.png"), grabbing !important;
+        cursor: url("/cursor/grab_1.png"), grabbing !important;
     }
 </style>

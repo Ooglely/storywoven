@@ -235,7 +235,7 @@
         /* transform: rotate(45deg); */
         width: 13px;
         height: 13px;
-        background-image: url("../../../static/chatballoon/arrow.png");
+        background-image: url("/chatballoon/arrow.png");
         /* border-top: none; */
         z-index: 20;
     }

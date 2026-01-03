@@ -12,6 +12,7 @@ import {
 } from "$lib/db/comments";
 import { checkImages } from "$lib/validate";
 import { uploadImages } from "$lib/upload";
+import { resolve } from "$app/paths";
 
 export const load: PageServerLoad = async () => {
   const comments = getAllComments();
