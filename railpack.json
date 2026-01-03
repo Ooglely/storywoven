@@ -1,7 +1,18 @@
 {
   "$schema": "https://schema.railpack.com",
   "provider": "node",
-  "buildAptPackages": ["webp"],
+  "steps": {
+    "install": {
+      "commands": [
+        "npm ci",
+        "curl -s https://raw.githubusercontent.com/Intervox/node-webp/latest/bin/install_webp | bash"
+      ]
+    },
+    "build": {
+      "inputs": [{ "step": "install" }],
+      "commands": ["npm run build"]
+    }
+  },
   "deploy": {
     "startCommand": "node build"
   }
