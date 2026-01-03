@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<dir name="grassySoil_new.img">
+  <dir name="back">
+    <png name="0" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="11, 369" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/0" />
+    </png>
+    <png name="1" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="11, 11" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/1" />
+    </png>
+    <png name="2" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="11, 11" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/2" />
+    </png>
+    <png name="3" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="425, 111" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/3" />
+    </png>
+    <png name="4" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="425, 6" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/2023StrawberryFarm.img/back/27" />
+    </png>
+    <png name="5" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="258, 81" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/5" />
+    </png>
+    <png name="6" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="315, 119" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/6" />
+    </png>
+    <png name="7" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="315, 5" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/7" />
+    </png>
+    <png name="8" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="306, 62" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/adventure.img/back/22" />
+    </png>
+    <png name="9" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="300, 86" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/9" />
+    </png>
+    <png name="10" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="171, 58" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/10" />
+    </png>
+    <png name="11" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="300, 5" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/11" />
+    </png>
+    <png name="12" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="11, 133" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/12" />
+    </png>
+    <png name="13" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="11, 11" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/13" />
+    </png>
+    <png name="14" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="11, 11" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/14" />
+    </png>
+    <png name="15" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="82, 242" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/15" />
+    </png>
+    <png name="16" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="250, 164" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/16" />
+    </png>
+    <png name="17" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="250, 177" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/17" />
+    </png>
+    <png name="18" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="250, 189" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/18" />
+    </png>
+    <png name="19" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="307, 163" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/19" />
+    </png>
+    <png name="20" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="270, 132" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/20" />
+    </png>
+    <png name="21" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="300, 102" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/21" />
+    </png>
+    <png name="22" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="250, 166" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/22" />
+    </png>
+    <png name="23" width="1" height="1" format="1" scale="0" pages="0" value="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAALSURBVBhXY2AAAgAABQABqtXIUQAAAABJRU5ErkJggg==">
+      <vector name="origin" value="250, 162" />
+      <int32 name="z" value="0" />
+      <string name="_outlink" value="Map/Back/_Canvas/grassySoil_new.img/back/23" />
+    </png>
+  </dir>
+  <dir name="ani" />
+</dir>

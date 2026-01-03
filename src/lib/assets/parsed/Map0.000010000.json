@@ -1,0 +1,363 @@
+[
+  {
+    "type": "static",
+    "data": [
+      {
+        "data": {
+          "no": 0,
+          "x": -48,
+          "y": -109,
+          "rx": 0,
+          "ry": 0,
+          "type": 1,
+          "cx": 0,
+          "cy": 0,
+          "bS": "grassySoil_new",
+          "a": 255,
+          "front": 0,
+          "ani": 0,
+          "f": 0
+        },
+        "sprite": {
+          "no": 0,
+          "origin": [11, 369],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/0"
+        },
+        "path": "bg/grassySoil_new.img/back/0.png"
+      }
+    ]
+  },
+  {
+    "type": "dynamic",
+    "data": [
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 3,
+          "f": 0,
+          "x": -255,
+          "y": -111,
+          "rx": -2,
+          "ry": -2,
+          "type": 4,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 3,
+          "origin": [425, 111],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/3"
+        },
+        "path": "bg/grassySoil_new.img/back/3.png"
+      }
+    ]
+  },
+  {
+    "type": "static",
+    "data": [
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 5,
+          "f": 0,
+          "x": -12,
+          "y": -56,
+          "rx": -5,
+          "ry": -5,
+          "type": 1,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 5,
+          "origin": [258, 81],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/5"
+        },
+        "path": "bg/grassySoil_new.img/back/5.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 6,
+          "f": 0,
+          "x": -64,
+          "y": -48,
+          "rx": -10,
+          "ry": -12,
+          "type": 1,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 6,
+          "origin": [315, 119],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/6"
+        },
+        "path": "bg/grassySoil_new.img/back/6.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 7,
+          "f": 0,
+          "x": -288,
+          "y": 76,
+          "rx": -10,
+          "ry": -12,
+          "type": 1,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 7,
+          "origin": [315, 5],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/7"
+        },
+        "path": "bg/grassySoil_new.img/back/7.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 7,
+          "f": 0,
+          "x": 0,
+          "y": 87,
+          "rx": -10,
+          "ry": -12,
+          "type": 1,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 7,
+          "origin": [315, 5],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/7"
+        },
+        "path": "bg/grassySoil_new.img/back/7.png"
+      }
+    ]
+  },
+  {
+    "type": "dynamic",
+    "data": [
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 8,
+          "f": 0,
+          "x": -68,
+          "y": -69,
+          "rx": -4,
+          "ry": -10,
+          "type": 4,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 8,
+          "origin": [306, 62],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/8"
+        },
+        "path": "bg/grassySoil_new.img/back/8.png"
+      }
+    ]
+  },
+  {
+    "type": "static",
+    "data": [
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 9,
+          "f": 0,
+          "x": -341,
+          "y": 12,
+          "rx": -12,
+          "ry": -15,
+          "type": 1,
+          "cx": 1200,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 9,
+          "origin": [300, 86],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/9"
+        },
+        "path": "bg/grassySoil_new.img/back/9.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 10,
+          "f": 0,
+          "x": 130,
+          "y": -56,
+          "rx": -12,
+          "ry": -15,
+          "type": 1,
+          "cx": 1200,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 10,
+          "origin": [171, 58],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/10"
+        },
+        "path": "bg/grassySoil_new.img/back/10.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 12,
+          "f": 0,
+          "x": -21,
+          "y": 260,
+          "rx": -15,
+          "ry": -15,
+          "type": 1,
+          "cx": 0,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 12,
+          "origin": [11, 133],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/12"
+        },
+        "path": "bg/grassySoil_new.img/back/12.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 15,
+          "f": 0,
+          "x": -654,
+          "y": 201,
+          "rx": -15,
+          "ry": -15,
+          "type": 1,
+          "cx": 2000,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 15,
+          "origin": [82, 242],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/15"
+        },
+        "path": "bg/grassySoil_new.img/back/15.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 16,
+          "f": 0,
+          "x": 14,
+          "y": 133,
+          "rx": -15,
+          "ry": -15,
+          "type": 1,
+          "cx": 2000,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 16,
+          "origin": [250, 164],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/16"
+        },
+        "path": "bg/grassySoil_new.img/back/16.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 17,
+          "f": 0,
+          "x": 514,
+          "y": 99,
+          "rx": -15,
+          "ry": -15,
+          "type": 1,
+          "cx": 2000,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 17,
+          "origin": [250, 177],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/17"
+        },
+        "path": "bg/grassySoil_new.img/back/17.png"
+      },
+      {
+        "data": {
+          "bS": "grassySoil_new",
+          "front": 0,
+          "ani": 0,
+          "no": 18,
+          "f": 0,
+          "x": 1014,
+          "y": 123,
+          "rx": -15,
+          "ry": -15,
+          "type": 1,
+          "cx": 2000,
+          "cy": 0,
+          "a": 255
+        },
+        "sprite": {
+          "no": 18,
+          "origin": [250, 189],
+          "z": 0,
+          "outlink": "Map/Back/_Canvas/grassySoil_new.img/back/18"
+        },
+        "path": "bg/grassySoil_new.img/back/18.png"
+      }
+    ]
+  }
+]

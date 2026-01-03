@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg: rgb(20, 21, 19);
+    --color-navbar: rgb(30, 32, 29);
+}
+
+* {
+}
+
+body {
+    margin: 0;
+    background: rgb(7, 133, 255);
+    background-image: url("../static/lights.gif");
+    background-attachment: fixed;
+    background-size: auto;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+}
+
+body,
+body * {
+    cursor: url("../static/cursor/pointer_0.png"), default;
+}
+
+a,
+a *,
+button,
+button * {
+    cursor: url("../static/cursor/button_0.png"), pointer;
+    -webkit-animation: click_cursor 1s infinite;
+    animation: click_cursor 1s infinite;
+}
+
+@keyframes click_cursor {
+    0% {
+        cursor: url("../static/cursor/button_0.png"), pointer;
+    }
+    50% {
+        cursor: url("../static/cursor/button_1.png"), pointer;
+    }
+}
+
+@font-face {
+    font-family: "Maplestory";
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url("../static/Maplestory-Light.woff2") format("woff2"),
+        url("../static/Maplestory-Light.woff") format("woff"),
+        url("../static/Maplestory-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "Maplestory";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src:
+        url("../static/Maplestory-Bold.woff2") format("woff2"),
+        url("../static/Maplestory-Bold.woff") format("woff"),
+        url("../static/Maplestory-Bold.otf") format("opentype"),
+        url("../static/Maplestory-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("../static/JetBrainsMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: staywork;
+    src: url("../static/Staywork.otf") format("opentype");
+}
+
+.monospace {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    letter-spacing: -0.8px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.maple {
+    font-family: "Maplestory", sans-serif;
+    color: white;
+    font-optical-sizing: auto;
+    letter-spacing: 0px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 0;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.chatballoon {
+    border-image-slice: 7 7 7 7;
+    border-image-width: 7px 7px 7px 7px;
+    border-image-outset: 6px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAMAAACaYWzBAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAADNQTFRFAAAAAAAA////7u7/3e7u7u7u3d3uzN3dzN3uu8zd7v//qrvMmarMzMzdiKq7qrvdu7vd7MiFUQAAABF0Uk5TAP////////////////////8QFUChAAAAgElEQVR4nO2SzQ7CQAiEmcW19v3f1VBboJDWhK4ePcpxPn4SZkBZoFr+lnAFsEQh4dpPzdvm2T3oxCBTPwBaAQaml+NDj+M36ArMROuwLEbkD34CuJEOb5+gEkbxvFh10XvXZzrIMeMFMJuKp3+d71u94CZ+xmd6FLDIGR/6Grgdw9pDK0RKJ8QAAAAASUVORK5CYII=");
+    border-style: solid;
+    background: rgb(238, 238, 238);
+}
+
+.dialog {
+    border-image-slice: 18 19 39 19;
+    border-image-width: 18px 19px 39px 19px;
+    border-image-outset: 17px 18px 38px 18px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABVCAMAAAA8EEdhAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAadQTFRFAAAAMjIyMjIyNDQ0MjIyMzMzMzMzMzMzMzMzMzMzd3d3qqqq3d3d////MzMziIiI7+/vzMzMmZmZd3d3Znd3VVVV7u7uNDQ0REREzc3Nqru7ZmZmd4iIiKqqqszezO7/qszdzMzMMzMz7f//d3eId4iZu97/u93/7v//u7u7////d5mZqt7uqt3uNDQ0ZmZmMzMzMzMzM1V3d7vumczuMzMzd4iIIneZEZneIZneM6reZrveiMzuZrvdM6rdIpndEZndRFVmEYi7M5neVareZrvud6rMZoiZZneIZnd3VardM5ndM0RVEYjMIYjMM3eZiJmZzN3d////IojMu7u7M4iqIZnMRHeI3d3d7u7uqqqqIpnMEZnMVWZ3zMzMM5nMVXd3RJneRJndRKrdVardZqrdZrzdZrvdd7zdd7vdd7zud7vuiMzumczuu7vMd4iZmaqqd4iIqru7Ioi8RHeIIoi7IYi7Ioi7zMzdIlVmVVVVZoiIImaIRGZm7e3tVXd37u7uqqq7IlV3ImaZRKreRKrdvMzMiJmZVWZ3RGZ3IkRVu8zMmZmZd9xf0QAAAI10Uk5TADNmmbu7mWYzVbu7u7uIu7vM3e7u/7tEu7vd7u7u3d3du0TM7u7d3cy7zO7d3SK7Infu3d2q3e7d3d3d3d3d3d3u3d3d3e7u///d3f/d3e7////d/+7d/////93d///d/93d7u7u7u7u7u7u7u7//////+7u7t3dzO677u7uzO7M3e7u3d3M3e7u/8y730ELDwAAAyBJREFUeJzt2MtPE0EYAPD5yj7aQlEBuwpipSLGgCQkoDGKj6vx5tk/AQ/GizfimZP8CZ69mphoUEw8CFGiqBETigJqi6i8ut1uyzgzu0v2MbtOa4IXvsvuzvbXmdm0M9+3gKwAAATIHf4rgJL7RsJUAsQbGGFsSrpDIAVQlYB2FCpIVBIGLpcY0QA2UxAcmXdcVYI22vTkPB1jQ5wgIx78lC8MGUtLRkMJUHMHFDTO93OatvNpvLwO/TC/L6FyxxKMkr6WBRiYU7oi5u0NjHPlHhj61AMQ+bR2uiWh44UMSIlBKNKWxlBJn7AMW/Q0hqdLhFyCFXYnHdoXIdIqO0vhZ26iyduhg4qZax4SK9CrTjMWMZFtmX1vq2GR5Bd6lbFGhSuK57NlyWrGeXroWHORbqjQNrmYLHuIUkya9CjhJRdp/Ugn32JQgch9wyVUuw2pG/QBZFb9BFdkA/lDNenYvOTgB0bWVWRyBDUyMpoZyRYsor1ziPPH80UcO+R43iKHZoVJ9/e6yeG3wuTEN4u0vxEmJ5ctcmRGmJxarJscfSVMej9b5Ni0MOlbqJt0TTnE5P/JYjs/mNO5PbJHdpvIm1zSZP5vsktzMbnLuBxBsMLrpqkM4YTbDe0khBiYHBTk76cJ0Z0QVB6xFiSl6CP23hkPJ2HBId1gRhKZ7cgegjJaIUKk82zf95LO9l8R5MDXlSBBWtfPUNGSs3IYH0lDFn5wQRuetzMlh7CVn8Z5yHOJBlP2mWezCEQgpf1HwvZKMeLZXmsjbN8XI86+XwdhCYkYcRISlvaIEU+mVBthKZwYcVK4Ooi+JUwawZXBihFP0lsbsRJ4IeJJ4GsjMe46wSV2ZTE4NClMzr4kVRKrxYQJq8UG5kZgQpicw+M90H9t/CY8FiQX8L2Rh4AGSnAdP8ECBA/DAxx/Daj/ffwWVPUXtC2U0Dtn1AYYM3pn7Er89tMr8BstkvVNR1dRzq52McqiRyiF0P521IwnLo/ZlTit9ytK9Q4pKp9f5E2ZxOQwqSzvJjYlu94nkegr3xj9y1uF0fvK7M5bBXYUf3fxB46ziu9+RBz3AAAAAElFTkSuQmCC");
+    border-style: solid;
+}

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<dir name="000010000.img">
+  <dir name="info">
+    <int32 name="version" value="10" />
+    <int32 name="cloud" value="0" />
+    <int32 name="town" value="0" />
+    <single name="mobRate" value="1" />
+    <string name="bgm" value="Bgm58/The Beginnig of The Adventure" />
+    <int32 name="returnMap" value="1000000" />
+    <string name="mapDesc" value="" />
+    <int32 name="hideMinimap" value="0" />
+    <int32 name="forcedReturn" value="999999999" />
+    <int32 name="moveLimit" value="0" />
+    <string name="mapMark" value="MushroomVillage" />
+    <int32 name="swim" value="0" />
+    <int32 name="fieldLimit" value="8260" />
+    <int32 name="VRTop" value="-892" />
+    <int32 name="VRLeft" value="-1310" />
+    <int32 name="VRBottom" value="915" />
+    <int32 name="VRRight" value="960" />
+    <int32 name="fly" value="0" />
+    <int32 name="noMapCmd" value="0" />
+    <string name="onFirstUserEnter" value="enter_maple" />
+    <string name="onUserEnter" value="" />
+    <int32 name="standAlone" value="0" />
+    <int32 name="partyStandAlone" value="0" />
+    <string name="fieldScript" value="" />
+    <int32 name="quarterView" value="0" />
+    <int32 name="fieldLimit2" value="0" />
+    <int32 name="fieldType" value="0" />
+    <string name="AmbientBGM" value="" />
+    <int32 name="AmbientBGMv" value="100" />
+    <int32 name="qrLimit" value="0" />
+  </dir>
+  <dir name="back">
+    <dir name="0">
+      <int32 name="no" value="0" />
+      <int32 name="x" value="-48" />
+      <int32 name="y" value="-109" />
+      <int32 name="rx" value="0" />
+      <int32 name="ry" value="0" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="a" value="255" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="f" value="0" />
+    </dir>
+    <dir name="1">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="3" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-255" />
+      <int32 name="y" value="-111" />
+      <int32 name="rx" value="-1" />
+      <int32 name="ry" value="-2" />
+      <int32 name="type" value="4" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="2">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="5" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-12" />
+      <int32 name="y" value="-56" />
+      <int32 name="rx" value="-5" />
+      <int32 name="ry" value="-5" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="3">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="6" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-64" />
+      <int32 name="y" value="-48" />
+      <int32 name="rx" value="-10" />
+      <int32 name="ry" value="-12" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="4">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="7" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-288" />
+      <int32 name="y" value="76" />
+      <int32 name="rx" value="-10" />
+      <int32 name="ry" value="-12" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="5">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="7" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="0" />
+      <int32 name="y" value="87" />
+      <int32 name="rx" value="-10" />
+      <int32 name="ry" value="-12" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="6">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="8" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-68" />
+      <int32 name="y" value="-69" />
+      <int32 name="rx" value="-2" />
+      <int32 name="ry" value="-10" />
+      <int32 name="type" value="4" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="7">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="9" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-341" />
+      <int32 name="y" value="12" />
+      <int32 name="rx" value="-12" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="1200" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="8">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="10" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="130" />
+      <int32 name="y" value="-56" />
+      <int32 name="rx" value="-12" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="1200" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="9">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="12" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-21" />
+      <int32 name="y" value="260" />
+      <int32 name="rx" value="-15" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="0" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="10">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="15" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="-654" />
+      <int32 name="y" value="201" />
+      <int32 name="rx" value="-15" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="2000" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="11">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="16" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="14" />
+      <int32 name="y" value="133" />
+      <int32 name="rx" value="-15" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="2000" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="12">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="17" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="514" />
+      <int32 name="y" value="99" />
+      <int32 name="rx" value="-15" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="2000" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+    <dir name="13">
+      <string name="bS" value="grassySoil_new" />
+      <int32 name="front" value="0" />
+      <int32 name="ani" value="0" />
+      <int32 name="no" value="18" />
+      <int32 name="f" value="0" />
+      <int32 name="x" value="1014" />
+      <int32 name="y" value="123" />
+      <int32 name="rx" value="-15" />
+      <int32 name="ry" value="-15" />
+      <int32 name="type" value="1" />
+      <int32 name="cx" value="2000" />
+      <int32 name="cy" value="0" />
+      <int32 name="a" value="255" />
+    </dir>
+  </dir>
+</dir>
