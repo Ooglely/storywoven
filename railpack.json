@@ -2,18 +2,21 @@
   "$schema": "https://schema.railpack.com",
   "provider": "node",
   "steps": {
-    "install": {
+    "install-cwebp": {
       "commands": [
-        "npm ci",
-        "curl -s https://raw.githubusercontent.com/Intervox/node-webp/latest/bin/install_webp | bash"
+        "curl -s https://raw.githubusercontent.com/Intervox/node-webp/latest/bin/install_webp | bash",
+        "whereis cwebp"
       ]
-    },
-    "build": {
-      "inputs": [{ "step": "install" }],
-      "commands": ["npm run build"]
     }
   },
   "deploy": {
+    "inputs": [
+      "...",
+      {
+        "step": "install-cwebp",
+        "include": ["/usr/bin/cwebp"]
+      }
+    ],
     "startCommand": "node build"
   }
 }
