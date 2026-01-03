@@ -58,7 +58,7 @@
         for (const [action, frames] of Object.entries(comment.mob.frames)) {
             for (let image = 0; image < frames; image++) {
                 let img = new Image();
-                img.src = `/mobs/${mobId}/${action}_${image}.webp`;
+                img.src = `/mobs/${mobId}/${action}_${image}`;
                 images[action as keyof typeof images].push(img);
                 loaders.push(img.decode());
             }
