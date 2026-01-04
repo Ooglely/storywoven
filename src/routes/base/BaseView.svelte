@@ -41,7 +41,7 @@
     <div class="navbar shrink-0">
         <div class="logo">
             <button onclick={() => loadView("hello")}  >
-                <img src="/logo_test.png" alt="Logo"/>
+                <img src="/logo.webp" alt="Logo"/>
             </button>
 
         </div>
