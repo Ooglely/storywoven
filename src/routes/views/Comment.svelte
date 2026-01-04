@@ -405,7 +405,7 @@
 
     <div
         bind:clientWidth={canvasWidth}
-        class="pb-4 h-[351px] overflow-y-hidden"
+        class="pb-4 h-[367px] overflow-y-hidden"
     >
         <PreviewCanvas mob={previewMob} width={canvasWidth} height={300} />
     </div>

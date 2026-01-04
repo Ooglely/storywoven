@@ -105,9 +105,10 @@
     .ground {
         position: relative;
         bottom: 0px;
-        height: 19px;
+        height: 35px;
         width: 100%;
         background-image: url("/ground.png");
+        background-position: top -4px center;
         border-radius: 0px 0px 7px 7px;
     }
 </style>

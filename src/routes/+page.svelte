@@ -85,14 +85,15 @@
     .ground {
         position: absolute;
         bottom: 0px;
-        height: 19px;
+        height: 39px;
         width: 100%;
         background-image: url("/ground.png");
+        background-position: top center;
     }
 
     .sprites {
         position: absolute;
-        bottom: 17px;
+        bottom: 30px;
         height: 50px;
         width: 100%;
     }
