@@ -71,9 +71,15 @@ export async function getNewestComments() {
 }
 
 export async function getAllComments() {
-  const comments = await db.query.commentsTable.findMany({
+  const comments = (await db.query.commentsTable.findMany({
     with: { author: true, mob: true },
     orderBy: desc(commentsTable.id),
+  })) as FullComment[];
+
+  comments.forEach((comment) => {
+    comment.delta = formatDistanceToNow(comment.timestamp, {
+      addSuffix: true,
+    });
   });
 
   return comments;
