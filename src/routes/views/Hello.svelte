@@ -26,6 +26,9 @@
             you can also hover over the sprites at the bottom to see others comments,
             or go to the comment tab to leave your own. (think of it as a fun little
             guestbook!)
+            <br /><br />
+            this site is meant to be visited on a desktop, but it should still work
+            on mobile. I promise you it looks better on a desktop though :)
         </p>
     </div>
 

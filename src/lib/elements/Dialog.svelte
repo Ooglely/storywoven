@@ -71,6 +71,10 @@
         background: white;
         padding: 1rem;
         width: auto;
+        max-width: 600px;
+        max-height: 600px;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     .close-button {
