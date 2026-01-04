@@ -19,14 +19,14 @@
         const authors = new Set<number>();
         return comments
             .slice()
-            .reverse()
             .filter((comment) => {
                 if (authors.has(comment.author.id)) {
                     return false;
                 }
                 authors.add(comment.author.id);
                 return true;
-            });
+            })
+            .reverse();
     });
 
     let shownComment: number;
