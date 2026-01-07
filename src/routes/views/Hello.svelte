@@ -86,9 +86,28 @@
     </div>
 
     <div class="flex flex-row justify-center items-center gap-1 flex-wrap mb-8">
+        <a href="https://storywoven.net/" target="_blank">
+            <img src="buttons/storywoven.png" alt="storywoven" />
+        </a>
+        <a href="https://storywoven.net/" target="_blank">
+            <img src="buttons/storywoven_raw.png" alt="storywoven" />
+        </a>
+        <div class="w-0 h-[33px] mx-0.5 border-1 border-gray-400"></div>
+        <a href="https://staydown.money/" target="_blank">
+            <img src="buttons/staydown.png" alt="staydown" />
+        </a>
         <a href="https://neocities.org/" target="_blank">
             <img src="buttons/neocities.jpeg" alt="neocities" />
         </a>
+        <a href="https://svelte.dev/" target="_blank">
+            <img src="buttons/svelte.gif" alt="svelte" />
+        </a>
+        <div class="maple w-full">
+            <p class="text-center">
+                if you have a 88x31 or website pls link it in your comment, I
+                would love to check it out and add it here
+            </p>
+        </div>
     </div>
 </div>
 <hr class="py-2" />
