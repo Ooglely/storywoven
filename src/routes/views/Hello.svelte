@@ -60,19 +60,19 @@
                 <ul>
                     <li>
                         <a
-                            href="https://staydown.money/wr?prev=https://staydown.money/"
+                            href="https://staydown.money/wr?prev=https://storywoven.net/"
                             >← prev</a
                         >
                     </li>
                     <li>
                         <a
-                            href="https://staydown.money/wr?random=https://staydown.money/"
+                            href="https://staydown.money/wr?random=https://storywoven.net/"
                             >random</a
                         >
                     </li>
                     <li>
                         <a
-                            href="https://staydown.money/wr?next=https://staydown.money/"
+                            href="https://staydown.money/wr?next=https://storywoven.net/"
                             >next →</a
                         >
                     </li>
