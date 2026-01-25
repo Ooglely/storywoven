@@ -63,7 +63,9 @@ export const actions = {
 
         const spriteSize = await checkImages([...standBuffers, ...moveBuffers]);
         if (spriteSize.width > 256 || spriteSize.height > 256) {
-          throw new Error("Mob images are too large (stay below 256x256px)");
+          return fail(400, {
+            error: "Mob images are too large (stay below 256x256px)",
+          });
         }
         // Since there wasn't an error here we are good to create a new mob in the DB
         mobID = await addNewMob({
