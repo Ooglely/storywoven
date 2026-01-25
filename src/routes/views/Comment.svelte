@@ -51,23 +51,13 @@
         // Convert base64 images to File objects and add to form data
         // This only needs to be done if the images aren't on the server yet
         // (so basically if it is a MS mob that has been used before, no need to convert)
-        if (standFiles.length > 0 && standFiles[0].url.startsWith("data:")) {
+        if (!loadedFromDatabase) {
             standFiles.forEach((file) => {
-                const blob = dataURLtoBlob(file.url);
-                const fileObj = new File([blob], file.name, {
-                    type: blob.type,
-                });
-                formData.append("stand", fileObj);
+                formData.append("stand", file.file!);
             });
-        }
 
-        if (moveFiles.length > 0 && moveFiles[0].url.startsWith("data:")) {
             moveFiles.forEach((file) => {
-                const blob = dataURLtoBlob(file.url);
-                const fileObj = new File([blob], file.name, {
-                    type: blob.type,
-                });
-                formData.append("move", fileObj);
+                formData.append("move", file.file!);
             });
         }
 
@@ -83,8 +73,14 @@
                         if (index !== -1) {
                             // author already exists, update the comment
                             commentContext.comments[index] = comment;
+                            commentContext.comments = [
+                                ...commentContext.comments,
+                            ];
                         } else {
-                            commentContext.comments.push(comment);
+                            commentContext.comments = [
+                                comment,
+                                ...commentContext.comments,
+                            ];
                         }
                         form = result.data;
                     }
@@ -145,6 +141,7 @@
             images.push({
                 name: file.name,
                 url: URL.createObjectURL(file),
+                file: file,
             } as ImagePreview);
         });
 
@@ -217,11 +214,13 @@
                 (url: string, index: number) => ({
                     name: `stand_${index}.png`,
                     url: url,
+                    file: new File([dataURLtoBlob(url)], `stand_${index}.png`),
                 }),
             );
             moveFiles = data.frames.move.map((url: string, index: number) => ({
                 name: `move_${index}.png`,
                 url: url,
+                file: new File([dataURLtoBlob(url)], `move_${index}.png`),
             }));
         } catch (error) {
             mobError =

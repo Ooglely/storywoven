@@ -7,6 +7,7 @@
     export interface ImagePreview {
         name: string;
         url: string;
+        file?: File;
     }
 
     let dragElement = $state<HTMLDivElement | undefined>();
