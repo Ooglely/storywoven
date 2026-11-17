@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { setContext } from "svelte";
+    import { onMount, setContext } from "svelte";
     import BaseView from "./base/BaseView.svelte";
     import UserCanvas from "./canvas/UserCanvas.svelte";
     import BackCanvas from "./canvas/BackCanvas.svelte";
@@ -26,6 +26,33 @@
     data.comments.then((resolved) => {
         comments.comments = resolved;
     });
+
+    // Keep the background black until the back canvas has loaded
+    // The maple canvas can fade in on its own once it is ready
+    let mapleLoaded = $state(false);
+    let backLoaded = $state(false);
+    let lightsLoaded = $state(false);
+
+    onMount(() => {
+        const lights = new Image();
+        lights.src = "/lights.gif";
+        lights.decode().finally(() => (lightsLoaded = true));
+    });
+
+    let backgroundLoaded = $derived(backLoaded && lightsLoaded);
+
+    // If the maple canvas is ready before the background, it's revealed instantly
+    // underneath the black cover so everything fades in together at the same rate.
+    // Only fade it separately if it finishes after the background is already shown.
+    let mapleFade = $state(false);
+    function onMapleLoad() {
+        mapleFade = backgroundLoaded;
+        mapleLoaded = true;
+    }
+
+    $effect(() => {
+        document.body.classList.toggle("loaded", backgroundLoaded);
+    });
 </script>
 
 <svelte:head>
@@ -44,8 +71,23 @@
         <BaseView />
     </div>
     <div class="sprites">
-        <MapleCanvas data={Map000010000} width={windowWidth} height={790} />
-        <BackCanvas width={windowWidth} height={windowHeight} />
+        <div
+            class="maple-wrap"
+            class:loaded={mapleLoaded}
+            class:fade={mapleFade}
+        >
+            <MapleCanvas
+                data={Map000010000}
+                width={windowWidth}
+                height={790}
+                onload={onMapleLoad}
+            />
+        </div>
+        <BackCanvas
+            width={windowWidth}
+            height={windowHeight}
+            onload={() => (backLoaded = true)}
+        />
         <UserCanvas
             comments={comments.comments}
             width={windowWidth}
@@ -53,6 +95,7 @@
         />
     </div>
     <div class="ground"></div>
+    <div class="load-cover" class:loaded={backgroundLoaded}></div>
 </div>
 
 <style>
@@ -80,6 +123,33 @@
             height: calc(100vh - 150px);
             top: 0px;
         }
+    }
+
+    /* Black cover over the whole scene (below .view) that fades out once the
+       background is ready, so every part of the scene fades in at the same rate */
+    .load-cover {
+        position: fixed;
+        inset: 0;
+        z-index: 5;
+        background: black;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+    }
+
+    .load-cover.loaded {
+        opacity: 0;
+    }
+
+    .maple-wrap {
+        opacity: 0;
+    }
+
+    .maple-wrap.loaded {
+        opacity: 1;
+    }
+
+    .maple-wrap.fade {
+        transition: opacity 0.4s ease;
     }
 
     .ground {

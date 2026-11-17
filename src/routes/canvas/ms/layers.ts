@@ -99,6 +99,8 @@ class Tile {
 }
 
 export abstract class Layer {
+  protected initId = 0;
+
   abstract init(width: number, height: number): Promise<void>;
   abstract draw(ctx: CanvasRenderingContext2D, timestamp: number): void;
 }
@@ -113,25 +115,34 @@ export class StaticLayer extends Layer {
   }
 
   async init(width: number, height: number) {
-    this.canvas = new OffscreenCanvas(width, height);
-    const ctx = this.canvas.getContext("2d");
+    const id = ++this.initId;
+
+    // Build into a fresh canvas so the current one keeps drawing until this is ready
+    const canvas = new OffscreenCanvas(width, height);
+    const ctx = canvas.getContext("2d");
     if (!ctx) throw new Error("Failed to create canvas context");
-    this.canvasRect = new Rectangle(-width / 2, -height / 2, width, height);
+    const canvasRect = new Rectangle(-width / 2, -height / 2, width, height);
 
     // Go through each layer and draw it in order
     for (const layer of this.data) {
-      await this.placeLayer(layer, ctx);
+      await this.placeLayer(layer, ctx, canvasRect);
+      if (id !== this.initId) return;
     }
+
+    this.canvas = canvas;
+    this.canvasRect = canvasRect;
   }
 
-  async placeLayer(layer: LayerData, ctx: OffscreenCanvasRenderingContext2D) {
-    if (!this.canvas || !this.canvasRect) return;
-
+  async placeLayer(
+    layer: LayerData,
+    ctx: OffscreenCanvasRenderingContext2D,
+    canvasRect: Rectangle,
+  ) {
     // Load image to draw
     const layer_img = new Image();
     layer_img.src = layer.path;
     await layer_img.decode();
-    const tile = new Tile(layer, layer_img, this.canvasRect);
+    const tile = new Tile(layer, layer_img, canvasRect);
 
     // Draw all tiles for static layer
     for (let y = tile.tileRect.top; y < tile.tileRect.bottom; y++) {
@@ -140,12 +151,12 @@ export class StaticLayer extends Layer {
           tile.position[0] +
           tile.tileOffset[0] * x -
           layer.sprite.origin[0] +
-          this.canvasRect.origin[0];
+          canvasRect.origin[0];
         const tileY =
           tile.position[1] +
           tile.tileOffset[1] * y -
           layer.sprite.origin[1] +
-          this.canvasRect.origin[1];
+          canvasRect.origin[1];
         ctx.drawImage(layer_img, tileX, tileY);
       }
     }
@@ -167,16 +178,21 @@ export class DynamicLayer extends Layer {
   }
 
   async init(width: number, height: number) {
-    this.canvasRect = new Rectangle(-width / 2, -height / 2, width, height);
+    const id = ++this.initId;
+    const canvasRect = new Rectangle(-width / 2, -height / 2, width, height);
 
-    // Initialize tiles for dynamic layer
+    // Build a fresh tile list so it replaces tiles instead of duplicating them
+    const tiles: Tile[] = [];
     for (const layer of this.data) {
       const layer_img = new Image();
       layer_img.src = layer.path;
       await layer_img.decode();
-      const tile = new Tile(layer, layer_img, this.canvasRect);
-      this.tiles.push(tile);
+      if (id !== this.initId) return;
+      tiles.push(new Tile(layer, layer_img, canvasRect));
     }
+
+    this.canvasRect = canvasRect;
+    this.tiles = tiles;
   }
 
   draw(ctx: CanvasRenderingContext2D, timestamp: number): void {

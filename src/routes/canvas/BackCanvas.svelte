@@ -7,30 +7,39 @@
     let {
         width,
         height,
+        onload,
     }: {
         width: number;
         height: number;
+        onload?: () => void;
     } = $props();
 
     let canvas: HTMLCanvasElement;
     let ctx: CanvasRenderingContext2D;
 
-    function drawCanvasBackground(width: number, height: number) {
+    async function drawCanvasBackground(width: number, height: number) {
         const big_tree_1_img = new Image();
         big_tree_1_img.src = big_tree_1;
-        big_tree_1_img.onload = () => {
-            ctx.drawImage(big_tree_1_img, -250, height - big_tree_1_img.height);
-        };
 
         const bench_img = new Image();
         bench_img.src = bench;
-        bench_img.onload = () => {
-            ctx.drawImage(
-                bench_img,
-                width - bench_img.width - 20,
-                height - bench_img.height,
-            );
-        };
+
+        await Promise.all([
+            big_tree_1_img.decode().then(() => {
+                ctx.drawImage(
+                    big_tree_1_img,
+                    -250,
+                    height - big_tree_1_img.height,
+                );
+            }),
+            bench_img.decode().then(() => {
+                ctx.drawImage(
+                    bench_img,
+                    width - bench_img.width - 20,
+                    height - bench_img.height,
+                );
+            }),
+        ]);
     }
 
     $effect(() => {
@@ -40,7 +49,7 @@
 
     onMount(() => {
         ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
-        drawCanvasBackground(width, height);
+        drawCanvasBackground(width, height).finally(() => onload?.());
     });
 </script>
 

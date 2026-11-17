@@ -1,17 +1,18 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { StaticLayer, DynamicLayer } from "./layers";
-    import { Layer } from "./layers";
+    import { StaticLayer, DynamicLayer, Layer } from "./layers";
     import type { FlattenedLayer } from "$lib/ms_types";
 
     let {
         data,
         width,
         height,
+        onload,
     }: {
         data: FlattenedLayer[];
         width: number;
         height: number;
+        onload?: () => void;
     } = $props();
 
     let canvas: HTMLCanvasElement;
@@ -28,28 +29,40 @@
         });
     });
 
-    function render(timestamp: number) {
-        ctx.clearRect(0, 0, width, height);
-        layers.forEach((layer) => {
-            if (layer instanceof Layer) {
-                layer.draw(ctx, timestamp);
-            }
-        });
-        requestAnimationFrame(render);
-    }
+    let hasLoaded = false;
 
+    // Runs on startup and again whenever the canvas size (or layer data) changes
     $effect(() => {
-        // need to reinit layers since the canvas size has changed
-        Promise.all(layers.map((layer) => layer.init(width, height)));
+        const currentLayers = layers;
+        const w = width;
+        const h = height;
+        if (!w || !h) return;
+
+        let stale = false;
+        Promise.all(currentLayers.map((layer) => layer.init(w, h))).then(
+            () => {
+                if (stale || hasLoaded) return;
+                hasLoaded = true;
+                onload?.();
+            },
+        );
+
+        return () => {
+            stale = true;
+        };
     });
 
-    onMount(async () => {
-        for (const layer of layers) {
-            await layer.init(width, height);
-        }
-
+    onMount(() => {
         ctx = canvas.getContext("2d")!;
-        requestAnimationFrame(render);
+        let frame = requestAnimationFrame(render);
+        function render(timestamp: number) {
+            ctx.clearRect(0, 0, width, height);
+            for (const layer of layers) {
+                layer.draw(ctx, timestamp);
+            }
+            frame = requestAnimationFrame(render);
+        }
+        return () => cancelAnimationFrame(frame);
     });
 </script>
 

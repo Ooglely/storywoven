@@ -10,12 +10,17 @@
 
 body {
     margin: 0;
-    background: rgb(7, 133, 255);
-    background-image: url("/lights.gif");
+    background-color: black;
     background-attachment: fixed;
     background-size: auto;
     background-repeat: repeat-x;
     overflow-x: hidden;
+}
+
+/* Applied once the background images have loaded (see routes/+page.svelte) */
+body.loaded {
+    background-color: rgb(7, 133, 255);
+    background-image: url("/lights.gif");
 }
 
 body,
