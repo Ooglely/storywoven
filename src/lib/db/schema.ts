@@ -45,3 +45,8 @@ export const mobsTable = pgTable("mobs", {
   frames: jsonb("frames").$type<{ stand: number; move: number }>().notNull(),
   offset: integer("offset").notNull().default(0),
 });
+
+export const counterTable = pgTable("counter", {
+  id: integer("id").primaryKey(),
+  visits: integer("visits").notNull().default(0),
+});

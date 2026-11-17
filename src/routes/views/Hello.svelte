@@ -1,7 +1,13 @@
 <script lang="ts">
     import SongHistory from "$lib/elements/SongHistory.svelte";
     import { getContext } from "svelte";
+    import { page } from "$app/state";
     import type { FullComment } from "$lib/db/types";
+
+    let visits: number = $derived(page.data.visits ?? 0);
+    let digits = $derived(
+        String(visits).padStart(5, "0").split(""),
+    );
 
     let commentContext: {
         comments: FullComment[];
@@ -34,16 +40,15 @@
 
     <div class="maple flex flew-row items-center justify-center gap-2">
         <p class="text-center grow-0">this website has been visited</p>
-        <div class="min-w-[160px]">
-            <script
-                type="text/javascript"
-                src="//counter1.fc2.com/counter.php?id=40461281&main=1"
-            ></script><noscript
-                ><img
-                    src="//counter1.fc2.com/counter_img.php?id=40461281&main=1"
-                    alt="Visit count"
-                /></noscript
-            >
+        <div
+            title="{visits} visits"
+            class="visit-count"
+            role="img"
+            aria-label="{visits} visits"
+        >
+            {#each digits as digit}
+                <img src="/counter/{digit}.gif" alt="" width="32" height="55" />
+            {/each}
         </div>
         <p>times!</p>
     </div>
@@ -134,6 +139,16 @@
 </div>
 
 <style>
+    .visit-count {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .visit-count img {
+        display: block;
+        image-rendering: smooth;
+    }
+
     .logos .staydown {
         display: flex;
         flex-direction: column;
