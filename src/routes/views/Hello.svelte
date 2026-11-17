@@ -24,7 +24,7 @@
         <h1 class="maple">hello!</h1>
         <hr class="pb-4" />
         <p class="maple">
-            this is alen's (or oog/waterfarer's) website!
+            this is alen's (or oog/coliadinae's) website!
             <br /><br />
             you can learn more about me and some of my projects on the about/links
             tabs.
